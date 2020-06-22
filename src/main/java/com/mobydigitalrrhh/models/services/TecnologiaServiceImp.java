@@ -25,12 +25,12 @@ public class TecnologiaServiceImp implements ITecnologiaService {
 	}
 
 	@Override
-	public void createTecnologia(Tecnologia tecnologia) {
-		tecnologiaDAO.save(tecnologia);
+	public Tecnologia createTecnologia(Tecnologia tecnologia) {
+		return tecnologiaDAO.save(tecnologia);
 	}
 
 	@Override
-	public void deleteTecnologia(String nombre) {
-		tecnologiaDAO.deleteByNombre(nombre);
+	public void deleteTecnologia(Integer id_tecnologia) {
+		tecnologiaDAO.deleteById(id_tecnologia);
 	}
 }

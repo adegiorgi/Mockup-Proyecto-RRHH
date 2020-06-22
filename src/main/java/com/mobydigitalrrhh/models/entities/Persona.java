@@ -10,7 +10,6 @@ public class Persona implements Serializable {
 
 	@Id
 	private Integer id_persona;
-	private int contadorPersonas = 0;
 	private String nombre;
 	private String apellido;
 	private String idioma;
@@ -28,14 +27,6 @@ public class Persona implements Serializable {
 
 	public void setId_persona(Integer id_persona) {
 		this.id_persona = id_persona;
-	}
-
-	public int getContadorPersonas() {
-		return this.contadorPersonas;
-	}
-
-	public void setContadorPersonas(int contadorPersonas) {
-		this.contadorPersonas = contadorPersonas;
 	}
 
 	public String getNombre() {

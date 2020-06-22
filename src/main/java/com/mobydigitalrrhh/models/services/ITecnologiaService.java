@@ -10,7 +10,7 @@ public interface ITecnologiaService {
 
 	public Tecnologia findByName(String nombre);
 
-	public void createTecnologia(Tecnologia tecnologia);
+	public Tecnologia createTecnologia(Tecnologia tecnologia);
 
-	public void deleteTecnologia(String nombre);
+	void deleteTecnologia(Integer id_tecnologia);
 }

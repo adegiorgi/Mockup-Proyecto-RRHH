@@ -15,23 +15,23 @@ public class PersonaServiceImp implements IPersonaService {
 	private IPersonaDAO personaDAO;
 
 	@Override
-	public List<Persona> findByPersona() {
+	public List<Persona> listaPersonas() {
 		return (List<Persona>) personaDAO.findAll();
 	}
 
 	@Override
-	public Persona findByDni(Integer dni) {
-		return personaDAO.findById(dni).orElse(null);
+	public Persona findByIdPersona(Integer id_persona) {
+		return personaDAO.findById(id_persona).orElse(null);
 	}
 
 	@Override
-	public void createPersona(Persona persona) {
-		personaDAO.save(persona);
+	public Persona createPersona(Persona persona) {
+		return personaDAO.save(persona);
 	}
 
 	@Override
-	public void deletePersona(Integer dni) {
-		personaDAO.deleteById(dni);
+	public void deletePersona(Integer id_persona) {
+		personaDAO.deleteById(id_persona);
 
 	}
 

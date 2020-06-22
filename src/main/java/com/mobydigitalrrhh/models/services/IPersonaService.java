@@ -6,11 +6,11 @@ import com.mobydigitalrrhh.models.entities.*;
 
 public interface IPersonaService {
 
-	public List<Persona> findByPersona();
+	public List<Persona> listaPersonas();
 
-	public Persona findByDni(Integer dni);
+	public Persona findByIdPersona(Integer id_persona);
 
-	public void createPersona(Persona persona);
+	public Persona createPersona(Persona persona);
 
-	public void deletePersona(Integer dni);
+	public void deletePersona(Integer id_persona);
 }

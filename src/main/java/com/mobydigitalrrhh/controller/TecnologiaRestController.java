@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import com.mobydigitalrrhh.models.entities.Tecnologia;
 import com.mobydigitalrrhh.models.services.TecnologiaServiceImp;
 
+@CrossOrigin(origins =  "*") //otorgamos permiso a esta URL de todas las request.
 @RequestMapping(value = "/api")
 @RestController
 public class TecnologiaRestController {

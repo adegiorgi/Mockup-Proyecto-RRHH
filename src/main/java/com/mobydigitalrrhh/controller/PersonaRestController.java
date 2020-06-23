@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import com.mobydigitalrrhh.models.entities.Persona;
 import com.mobydigitalrrhh.models.services.PersonaServiceImp;
 
+@CrossOrigin(origins =  "*") //otorgamos permiso a esta URL de todas las request.
 @RequestMapping(value = "/api")
 @RestController
 public class PersonaRestController {
@@ -74,7 +75,7 @@ public class PersonaRestController {
 			personaService.deletePersona(id_persona);
 		} catch (DataAccessException e) {
 			respuesta.put("Error", "Error al querer eliminar una persona por 'id'.");
-			return new ResponseEntity<Object>(respuesta, HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity<Object>(respuesta, HttpStatus.NO_CONTENT);
 		}
 
 		respuesta.put("Mensaje", "La persona se eliminó con éxito.");

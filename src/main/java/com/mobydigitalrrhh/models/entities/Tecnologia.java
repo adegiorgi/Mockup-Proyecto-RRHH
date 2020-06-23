@@ -15,12 +15,15 @@ public class Tecnologia implements Serializable {
 	public Integer getId_tecnologia() {
 		return id_tecnologia;
 	}
+	
 	public void setId_tecnologia(Integer id_tecnologia) {
 		this.id_tecnologia = id_tecnologia;
 	}
+	
 	public String getNombre() {
 		return nombre;
 	}
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}

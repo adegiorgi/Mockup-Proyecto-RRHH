@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import com.mobydigitalrrhh.models.entities.Persona;
 import com.mobydigitalrrhh.models.services.PersonaServiceImp;
 
-@CrossOrigin(origins =  "*") //otorgamos permiso a esta URL de todas las request.
+//@CrossOrigin(origins =  "*") //otorgamos permiso a esta URL de todas las request.
 @RequestMapping(value = "/api")
 @RestController
 public class PersonaRestController {

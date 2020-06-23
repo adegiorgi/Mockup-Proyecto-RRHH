@@ -22,6 +22,16 @@ public class Persona implements Serializable {
 	private Integer tecnica;
 	private boolean viajar;
 
+	
+
+	public Integer getDni() {
+		return dni;
+	}
+
+	public void setDni(Integer dni) {
+		this.dni = dni;
+	}
+
 	public Integer getId_persona() {
 		return this.id_persona;
 	}

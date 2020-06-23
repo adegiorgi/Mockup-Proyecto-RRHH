@@ -9,6 +9,7 @@ import javax.persistence.*;
 public class Persona implements Serializable {
 
 	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id_persona;
 	private String nombre;
 	private String apellido;

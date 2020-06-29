@@ -4,12 +4,13 @@ import java.io.Serializable;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "personas")
+@Entity // identificamos que esta clase va a ser una "Entidad".
+@Table(name = "personas") // mapea la tabla con la DB.
+// la interfaz Serializable convierte la clase en n° binarios para permitir la lectura desde el front.
 public class Persona implements Serializable {
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO) // auto-incrementa la id_persona en la DB.
 	private Integer id_persona;
 	private String nombre;
 	private String apellido;
@@ -21,8 +22,6 @@ public class Persona implements Serializable {
 	private Integer habilidades;
 	private Integer tecnica;
 	private boolean viajar;
-
-	
 
 	public Integer getDni() {
 		return dni;

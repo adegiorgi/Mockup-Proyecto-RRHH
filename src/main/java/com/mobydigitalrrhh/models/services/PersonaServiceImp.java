@@ -32,7 +32,6 @@ public class PersonaServiceImp implements IPersonaService {
 	@Override
 	public void deletePersona(Integer id_persona) {
 		personaDAO.deleteById(id_persona);
-
 	}
 
 }
